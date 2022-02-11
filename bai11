@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int n,dem,k[101],d=1,max1;
+int main()
+{
+    freopen("bai11.inp","r",stdin);
+    freopen("bai11.out","w",stdout);
+
+         while(cin>>n)
+    {
+        dem=0;
+        for(int i=2;i<=n/2+1;i++) if(((2*n-i*i+i)*1.0/(2*i))==trunc(((2*n-i*i+i)*1.0/(2*i)))&&(2*n-i*i+i)*1.0/(2*i)>0) {dem++;}
+        cout<<dem<<endl;
+    }
+    return 0;
+}
