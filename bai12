@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int t;
+long long a,b,dema1,demb1,dema2,demb2,dem;
+int main()
+{
+    freopen("bai12.inp","r",stdin);
+    freopen("bai12.out","w",stdout);
+    cin>>t;
+    for(int i=1;i<=t;i++)
+    {
+        cin>>a>>b;dem=0;
+        dema1=a/12;demb1=b/12;dema2=a/60;demb2=b/60;
+        dem=demb1-dema1-(demb2-dema2);
+        dema1=a/30;demb1=b/30;
+        dem=dem+demb1-dema1-(demb2-dema2);
+        cout<<dem<<endl;
+    }
+
+    return 0;
+}
